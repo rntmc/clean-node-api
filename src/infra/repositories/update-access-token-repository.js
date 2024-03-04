@@ -4,6 +4,7 @@ module.exports = class UpdateAccessTokenRepository {
   constructior (userModel) {
     this.userModel = userModel
   }
+
   async update (userId, accessToken) {
     if (!userId) {
       throw new MissingParamError('userId')
