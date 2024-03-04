@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1709573145035" clover="3.2.0">
-  <project timestamp="1709573145035" name="All files">
-    <metrics statements="32" coveredstatements="25" conditionals="4" coveredconditionals="3" methods="4" coveredmethods="3" elements="40" coveredelements="31" complexity="0" loc="32" ncloc="32" packages="2" files="2" classes="2"/>
+<coverage generated="1709573348695" clover="3.2.0">
+  <project timestamp="1709573348695" name="All files">
+    <metrics statements="54" coveredstatements="31" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="3" elements="64" coveredelements="37" complexity="0" loc="54" ncloc="54" packages="3" files="3" classes="3"/>
     <package name="infra.helpers">
       <metrics statements="26" coveredstatements="22" conditionals="4" coveredconditionals="3" methods="3" coveredmethods="3"/>
       <file name="mongo-helper.js" path="C:\Users\Renato\clean-node-api\src\infra\helpers\mongo-helper.js">
@@ -32,6 +32,34 @@
         <line num="24" count="0" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="infra.repositories">
+      <metrics statements="22" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="update-access-token-repository.js" path="C:\Users\Renato\clean-node-api\src\infra\repositories\update-access-token-repository.js">
+        <metrics statements="22" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
       </file>
     </package>
     <package name="utils.errors">
