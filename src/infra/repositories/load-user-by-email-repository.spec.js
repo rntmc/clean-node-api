@@ -14,6 +14,7 @@ const makeSut = () => {
 
 describe('LoadUserByEmail Repository', () => {
   beforeAll(async () => {
+    await MongoHelper.connect(process.env.MONGO_URL)
     db = await MongoHelper.getDb()
   })
 
@@ -54,7 +55,7 @@ describe('LoadUserByEmail Repository', () => {
   })
 
   test('Should throw if no email is provided', async () => {
-    const {sut} = makeSut()
+    const { sut } = makeSut()
     const promise = sut.load()
     expect(promise).rejects.toThrow(new MissingParamError('email'))
   })
