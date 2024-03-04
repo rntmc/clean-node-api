@@ -11,7 +11,7 @@ module.exports = {
     this.db = this.client.db(dbName)
   },
 
-  async disconnect() {
+  async disconnect () {
     await this.client.close()
   },
 
