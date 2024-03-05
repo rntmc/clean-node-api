@@ -2,12 +2,12 @@ TN:
 SF:src\infra\helpers\mongo-helper.js
 FN:4,connect
 FN:14,disconnect
-FN:20,getDb
+FN:20,getCollection
 FNF:3
 FNH:3
 FNDA:1,connect
 FNDA:1,disconnect
-FNDA:1,getDb
+FNDA:1,getCollection
 DA:1,1
 DA:2,1
 DA:3,1
