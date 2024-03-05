@@ -2,7 +2,6 @@ const { MongoClient } = require('mongodb')
 const MongoHelper = require('../helpers/mongo-helper')
 const LoadUserByEmailRepository = require('./load-user-by-email-repository')
 const MissingParamError = require('../../utils/errors/missing-param-error')
-const mongoHelper = require('../helpers/mongo-helper')
 let userModel
 
 const makeSut = () => {
@@ -12,7 +11,7 @@ const makeSut = () => {
 describe('LoadUserByEmail Repository', () => {
   beforeAll(async () => {
     await MongoHelper.connect(global.__MONGO_URI__)
-    userModel = await mongoHelper.getCollection('users')
+    userModel = await MongoHelper.getCollection('users')
   })
 
   beforeEach(async () => {
@@ -20,7 +19,7 @@ describe('LoadUserByEmail Repository', () => {
   })
 
   afterAll(async () => {
-    await mongoHelper.disconnect()
+    await MongoHelper.disconnect()
   })
 
   test('Should return null if no user is found', async () => {
